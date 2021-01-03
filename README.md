@@ -16,10 +16,9 @@ For more info about the biology, please read [Dynamics of Auxilin 1 and GAK in c
 For more info about how molecules were tracked, please read [Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint](https://www.cell.com/developmental-cell/fulltext/S1534-5807(13)00382-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580713003821%3Fshowall%3Dtrue)
 
 ## Flowchart
-* Clathrin and auxilin images were preprocessed in MATLAB
-We will be importing `tiff` images, which are stacks of 2D planes to make a 3D images. Images were collected over time to track clathrin and auxlin. Images were collected using a microscope
-* 
+Clathrin and Auxilin molecule images were acquired in `tif` format. Molecules were tracked and its metadata (intensity, number of frames, etc) were analyzed using MATLAB. 
 
+![img1](/Users/g/Desktop/Screen Shot 2021-01-02 at 2.56.40 PM.png)
 
 
 ## Requirements
