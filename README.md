@@ -18,7 +18,7 @@ For more info about how molecules were tracked, please read [Advances in Analysi
 ## Flowchart
 Clathrin and Auxilin molecule images were acquired in `tif` format. Molecules were tracked and its metadata (intensity, number of frames, etc) were analyzed using MATLAB. 
 
-![img1](/img/img1.png =100x)
+![img1](/img/img1.png =50x)
 
 
 ## Requirements
