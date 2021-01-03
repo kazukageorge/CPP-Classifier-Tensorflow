@@ -9,19 +9,17 @@ We have about 22k samples of datasets. We divide 60% to training, 20% to validat
 This work was collaborated with Jeremy Gygi. 
 
 ## Preliminary info
-We are using 3D image data obtained from a microscope that tracks two molecules of interest -- clathrin and auxilin. These molecules are invovled when cells "eat" extra-cellular material (ex. virus, protein, large molecules). At the location where cell would like to invaginate the "food", bunch of clathrin molecules cluster right underneath the cell surface, and forms a "pit" (looks like a cage to ferry the food inside, ~70nm in diameter). When cage surrounds the food and the disassembly of each clathrin is decided by the arrival of auxilin. Hence, if auxilin shows up, the cell was successful to form a pit, and eat its food. 
+We are interested in how cells "eat" extracellular materials (ex. virus, protein, large molecules). One way is by a process called clathrin mediated endocytosis, where two key molecules, clathrin and auxilin, can be used to determine if the cargo was entered successfully. 
+
+<img src="/img/img2.png" width="300"/>
 
 For more info about the biology, please read [Dynamics of Auxilin 1 and GAK in clathrin-mediated traffic](https://rupress.org/jcb/article/219/3/e201908142/133624/Dynamics-of-Auxilin-1-and-GAK-in-clathrin-mediated)
 
 For more info about how molecules were tracked, please read [Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint](https://www.cell.com/developmental-cell/fulltext/S1534-5807(13)00382-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580713003821%3Fshowall%3Dtrue)
 
-## Flowchart
-Clathrin and Auxilin molecule images were acquired in `tif` format. Molecules were tracked and its metadata (intensity, number of frames, etc) were analyzed using MATLAB. 
-
-![img1](/img/img1.png)
-
-<img src="/img/img1.png" alt="drawing" width="200"/>
-
+## Code Flowchart
+1. Load the traces for clathrin and auxlin and parse the metadata into a dataframe
+2. 
 
 
 ## Requirements
