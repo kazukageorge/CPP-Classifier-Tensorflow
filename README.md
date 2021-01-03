@@ -20,6 +20,9 @@ Clathrin and Auxilin molecule images were acquired in `tif` format. Molecules we
 
 ![img1](/img/img1.png)
 
+<img src="/img/img1.png" alt="drawing" width="200"/>
+
+
 
 ## Requirements
 * Tensorflow 
