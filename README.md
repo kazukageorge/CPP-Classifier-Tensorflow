@@ -11,7 +11,7 @@ This work was collaborated with Jeremy Gygi.
 ## Preliminary info
 We are interested in how cells "eat" extracellular materials (ex. virus, protein, large molecules). One way is by a process called clathrin mediated endocytosis, where two key molecules, clathrin and auxilin, can be used to determine if the cargo was entered successfully. 
 
-<img src="/img/img2.png" width="300"/>
+<img src="/img/img2.png" width="800"/>
 
 For more info about the biology, please read [Dynamics of Auxilin 1 and GAK in clathrin-mediated traffic](https://rupress.org/jcb/article/219/3/e201908142/133624/Dynamics-of-Auxilin-1-and-GAK-in-clathrin-mediated)
 
