@@ -13,6 +13,10 @@ We are interested in how cells "eat" extracellular materials (ex. virus, protein
 
 <img src="/img/img2.png" width="800"/>
 
+These molecules were captured using microscopes and were detected/tracked using MATLAB. The metadata is saved in a `.mat` format. 
+
+<img src="/img/img1.png" width="500"/>
+
 For more info about the biology, please read [Dynamics of Auxilin 1 and GAK in clathrin-mediated traffic](https://rupress.org/jcb/article/219/3/e201908142/133624/Dynamics-of-Auxilin-1-and-GAK-in-clathrin-mediated)
 
 For more info about how molecules were tracked, please read [Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint](https://www.cell.com/developmental-cell/fulltext/S1534-5807(13)00382-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580713003821%3Fshowall%3Dtrue)
