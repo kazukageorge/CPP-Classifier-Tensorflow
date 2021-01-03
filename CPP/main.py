@@ -19,19 +19,15 @@ from itertools import chain
 from IPython import display
 from tensorflow.python.data import Dataset
 
-
 from itertools import groupby
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from datetime import datetime
 
-
 import tensorflow as tf
 
 def get_args(argv=None):
-    '''
-    '''
     # ADDD PLOTS
     if argv == None:
         sys.exit(2)
@@ -68,9 +64,12 @@ def get_args(argv=None):
 
     print('-'*100)
     print('Input Arguments: \n')
-    print('VERBOSE:                  {}'.format(verbose))
+    # print('VERBOSE:                  {}'.format(verbose))
     print('INPUT_DATA_DIRECTORY:     {}'.format(inputData))
     # print('-'*100)
+
+    if not inputData:
+        print('Please type \npython main.py --help')
 
     return verbose, inputData
 

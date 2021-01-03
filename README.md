@@ -23,21 +23,21 @@ For more info about how molecules were tracked, please read [Advances in Analysi
 
 ## Code Flowchart
 1. Load the traces for clathrin and auxlin and parse the metadata into a dataframe
-2. 
+2. Normalize the data for training
 
 
 ## Requirements
-* Tensorflow 
+I am using macOS Mojave 10.14.6. Installed packages are:
+
+1. tensorflow   2.4.0
+2. numpy    1.19.2
+3. pandas   1.1.5
+4. scipy    1.5.2
+5. iPython  7.19.0
 
 ## Config
 
-You will need to create an envrionment that has tensorflow. We are 
-
-1. Open "Terminal"
-2. type: source ~/tensorflow/venv/bin/activate
-3. type: python masterscript.py
-
-
+You will need to create an envrionment that has tensorflow. Type `conda env create -n tensorflow`, and install the above packages. Once installed, type `conda activate tensorflow`. Locate to the directory that has the repository and type `python main.py -i <dir_to_InputData>`
 
 
 
