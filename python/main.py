@@ -292,7 +292,6 @@ def visualize():
 def normalize_df(df):
     print('Normalizing the dataframe')
     df_norm = df.copy()
-    print(df_norm)
     df_scaled = pd.DataFrame(StandardScaler().fit_transform(df_norm), columns=df_norm.columns)
     df_norm[:] = df_scaled[:].values
 
@@ -334,7 +333,6 @@ def normalize_df(df):
 
 
 def preprocess_features(df):
-    print("\n2\n")
     """Prepares input features from the data set.
 
     Args:
@@ -344,12 +342,17 @@ def preprocess_features(df):
         A DataFrame that contains the features to be used for the model, including
         synthetic features.
     """
+    # selected_features = df[
+    #     ['lifetime', 'max_intensity', 'background',
+    #     'totaldisp', 'max_msd',
+    #     'avg_rise', 'avg_dec', 'risevsdec',
+    #     'avg_mom_rise', 'avg_mom_dec', 'risevsdec_mom',
+    #     'cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8']]
     selected_features = df[
         ['lifetime', 'max_intensity', 'background',
         'totaldisp', 'max_msd',
         'avg_rise', 'avg_dec', 'risevsdec',
-        'avg_mom_rise', 'avg_mom_dec', 'risevsdec_mom',
-        'cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8']]
+        'avg_mom_rise', 'avg_mom_dec', 'risevsdec_mom']]
     processed_features = selected_features.copy()
     return processed_features
 
@@ -411,7 +414,7 @@ def preprocess_targets(df):
     output_targets["aux"] = df["aux"]
     return output_targets
 
-def train_model(  # happens late
+def train_model(
         learning_rate,
         steps,
         batch_size,
@@ -422,8 +425,9 @@ def train_model(  # happens late
         targetCol='aux',
         showTrainingPrints=True,
         shuffleTrainingData=True,
-        numPeriods=20):
-    print("\n6\n")
+        numPeriods=20
+    ):
+    print("initializing training..")
     df_total = df_total.astype(float)
     numTracks = df_total.shape[0]
     # Trains a linear regression model.
@@ -449,8 +453,8 @@ def train_model(  # happens late
     #    A `DNNClassifier` object trained on the training data.
     #    3 CSV Files labeled 'total_pred', 'pred_correct' and 'pred_incorrect'
 
-    # Re-Index Randomly:
-    df_sample = df_total.sample(frac=1)
+    # Randomize the rows
+    df_sample = df_total.sample(frac=1,replace=false)
 
     # Perform initial split into Training and Testing:
     numTotal = df_sample.shape[0]

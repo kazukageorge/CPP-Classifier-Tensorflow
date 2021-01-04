@@ -1,4 +1,4 @@
-# Clathrin Coated Pits Classififer using traces of Auxilin and Clathrin usng Tensorflow
+# Clathrin Coated Pit Classifier 
 
 This is repository has the codes used to classify the traces of auxilin and clathrin molecules thats cooperate to form a clathrin coated pits inolved in how cells eat and transport outside-the-cell material. Images were collected using a micrscope.
 
@@ -9,7 +9,7 @@ We have about 22k samples of datasets. We divide 60% to training, 20% to validat
 This work was collaborated with Jeremy Gygi. 
 
 ## Preliminary info
-We are interested in how cells "eat" extracellular materials (ex. virus, protein, large molecules). One way is by a process called clathrin mediated endocytosis, where two key molecules, clathrin and auxilin, can be used to determine if the cargo was entered successfully. 
+We are interested in how cells "eat" extracellular materials (ex. virus, protein, large molecules). One way is by a process called clathrin mediated endocytosis, where two key molecules, clathrin and auxilin, can be used to determine if the cargo was entered successfully. Multiple clathrin molecules gather to make a circular shape "Pit" and at the onset of completion, auxilin molecules signal the disassembly of the clathrin coated pit (CCP). This means that when the pit is forming, clathrin signals gather (increases), and near the peak, auxilin intensity will increase indicating the onset of uncoating.
 
 <img src="/img/img2.png" width="800"/>
 
@@ -23,7 +23,8 @@ For more info about how molecules were tracked, please read [Advances in Analysi
 
 ## Code Flowchart
 1. Load the traces for clathrin and auxlin and parse the metadata into a dataframe
-2. Normalize the data for training
+2. Normalize the data for training using `sklearn.preprocessing.StandardScaler`
+3. 
 
 
 ## Requirements
