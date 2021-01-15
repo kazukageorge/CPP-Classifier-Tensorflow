@@ -23,8 +23,10 @@ For more info about how molecules were tracked, please read [Advances in Analysi
 
 ## Code Flowchart
 1. Load the traces for clathrin and auxlin and parse the metadata into a dataframe
-2. Normalize the data for training using `sklearn.preprocessing.StandardScaler`
-3. 
+2. Average out the traces data (vector) into a scalar value
+3. Data processing. eg. Normalize the data for training using `sklearn.preprocessing.StandardScaler`
+4. Split the data randomly into training, validation, testing set
+5. Train the model using your choice of NN. I used a simple logistic regression with SGD/ADAM with MSE, which gives accuracy of ~93%
 
 
 ## Requirements
