@@ -21,13 +21,6 @@ For more info about the biology, please read [Dynamics of Auxilin 1 and GAK in c
 
 For more info about how molecules were tracked, please read [Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint](https://www.cell.com/developmental-cell/fulltext/S1534-5807(13)00382-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580713003821%3Fshowall%3Dtrue)
 
-## Code Flowchart
-1. Load the traces for clathrin and auxlin and parse the metadata into a dataframe
-2. Average out the traces data (vector) into a scalar value
-3. Data processing. eg. Normalize the data for training using `sklearn.preprocessing.StandardScaler`
-4. Split the data randomly into training, validation, testing set
-5. Train the model using your choice of NN. I used a simple logistic regression with SGD/ADAM with MSE, which gives accuracy of ~93%
-
 
 ## Requirements
 I am using macOS Mojave 10.14.6. Installed packages are:
